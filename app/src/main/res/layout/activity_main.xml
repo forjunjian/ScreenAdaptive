@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/btn_main"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            layout="@layout/view_compact"
+            android:layout_width="match_parent"
+            android:layout_height="18dp"/>
+
+        <TextView
+            android:id="@+id/msg_main_dimen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="点击获取详细信息"/>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/msg_main_view"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="8dp"
+            android:layout_height="wrap_content"/>
+        <View
+            android:id="@+id/view_main_width"
+            android:layout_width="@dimen/dp400"
+            android:layout_height="3dp"
+            android:background="#EF0B57"/>
+
+        <View
+            android:id="@+id/view_main_height"
+            android:layout_width="3dp"
+            android:layout_height="@dimen/dp400"
+            android:background="#EF0B57"/>
+
+        <View
+            android:layout_width="1px"
+            android:layout_centerHorizontal="true"
+            android:background="#0F0"
+            android:layout_height="match_parent"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            android:layout_height="match_parent">
+            <View
+                android:id="@+id/line_main_mini"
+                android:layout_width="@dimen/dp200"
+                android:background="#f4c63e"
+                android:layout_height="8dp"/>
+            <View
+                android:layout_width="@dimen/dp200"
+                android:background="#160830"
+                android:layout_marginTop="2px"
+                android:layout_height="8dp"/>
+            <View
+                android:id="@+id/line_main_max"
+                android:layout_marginTop="2px"
+                android:layout_width="@dimen/dp200"
+                android:background="#f4c63e"
+                android:layout_height="8dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
